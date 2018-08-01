@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="534.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="126.0" prefWidth="588.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" />
+            <FlowPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

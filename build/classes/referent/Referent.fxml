@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="referent.ReferentController">
+   <center>
+      <AnchorPane prefHeight="315.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabReferent" layoutY="14.0" prefHeight="283.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="tabcReferentNr" prefWidth="69.0" text="ReferentenNr" />
+                <TableColumn fx:id="tabcVorname" prefWidth="81.0" text="Vorname" />
+                  <TableColumn fx:id="tabcNachname" prefWidth="75.0" text="Nachname" />
+                  <TableColumn fx:id="tabcFestnetz" prefWidth="75.0" text="Festnetz" />
+                  <TableColumn fx:id="tabcMobil" prefWidth="75.0" text="Mobil" />
+                  <TableColumn fx:id="tabcEmail" prefWidth="75.0" text="EMail" />
+                  <TableColumn fx:id="tabcAktiv" prefWidth="65.0" text="Aktiv" />
+                  <TableColumn fx:id="tabcBemerkung" prefWidth="85.0" text="Bemerkung" />
+              </columns>
+            </TableView>
+            <Button fx:id="btDetails" layoutX="443.0" layoutY="305.0" mnemonicParsing="false" onAction="#btDetails_Click" text="Details ..." />
+            <Button fx:id="ende" layoutX="543.0" layoutY="305.0" mnemonicParsing="false" onAction="#ende_Click" text="Ende" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Pane prefHeight="56.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="14.0" text="Referenten">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

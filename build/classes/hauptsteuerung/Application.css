@@ -1,0 +1,110 @@
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=50Q0u0kwi++bu++hX++++rd++kX */
+
+/* Feel free to copy&paste color codes to your application */
+
+
+/* As hex codes */
+
+.color-primary-0 { -fx-background-color: #FFAB00 }	/* Main Primary color */
+.color-primary-1 { -fx-background-color: #FFC754 }
+.color-primary-2 { -fx-background-color: #FFB826 }
+.color-primary-3 { -fx-background-color: #D79100 }
+.color-primary-4 { -fx-background-color: #AD7400 }
+
+.color-secondary-1-0 { -fx-background-color: #FFD500 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { -fx-background-color: #FFE254 }
+.color-secondary-1-2 { -fx-background-color: #FFDB26 }
+.color-secondary-1-3 { -fx-background-color: #D7B400 }
+.color-secondary-1-4 { -fx-background-color: #AD9000 }
+
+.color-secondary-2-0 { -fx-background-color: #FF7600 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { -fx-background-color: #FFA354 }
+.color-secondary-2-2 { -fx-background-color: #FF8B26 }
+.color-secondary-2-3 { -fx-background-color: #D76400 }
+.color-secondary-2-4 { -fx-background-color: #AD5000 }
+
+.color-complement-0 { -fx-background-color: #0F41BC }	/* Main Complement color */
+.color-complement-1 { -fx-background-color: #4F71C6 }
+.color-complement-2 { -fx-background-color: #2E58C0 }
+.color-complement-3 { -fx-background-color: #0B3191 }
+.color-complement-4 { -fx-background-color: #082774 }
+
+.hintergrund{ /* Hintergrundfarbe für Hauptfenster */
+	-fx-background-color: #FFE254
+}
+.hintergrundTop{ /* Hintergrundfarbe für Top in BorderPane */
+	-fx-background-color: #FF9F00
+}
+.hintergrundBottom{ /* Hintergrundfarbe für Bottom (Leiste mit Buttons) */
+	-fx-background-color: #FFE254
+}
+.schriftLabel{ /* Texteinstellungen für Überschrift */
+	-fx-text-fill: white;
+	-fx-font-size: 24;
+	-fx-font-weight: bold
+	
+}
+.schriftLabelAbweichenderHintergrund{
+	-fx-text-fill: #FF9F00;
+	-fx-font-size: 18;
+	-fx-font-weight: bold
+}
+
+.button{ /* Standardformatierung für Buttons */
+	-fx-background-color: #0F41BC;
+	-fx-font-size: 14;
+	-fx-font-weight: bold;
+	-fx-text-fill: #FFAB00
+}
+.sonstigesLabel{
+	-fx-font-size: 14
+}
+.hintergrundTop .list-cell:odd{ /* Hintergrundfarbe ungerader Zellen (nur ListView) */
+	-fx-background-color: #7CB3FF;
+	
+}
+
+.hintergrundTop .list-cell:even{ /* Hintergrundfarbe gerader Zellen in ListView */
+	-fx-background-color: #FFC970;
+	
+}
+
+.hintergrundTop .list-cell:selected{ /* Hintergrundfarbe ausgewählter Zellen in ListView */
+	-fx-background-color: #002E6E;
+}
+
+.table-view .column-header-background .label{ /* Hintergrund- und Textfarbe in Spaltenüberschriften (TableView) */
+    -fx-text-fill: #0F41BC;
+    -fx-background-color: #FFD500;
+}
+.table-view .column-header, .table-view .filler{ /* Hintergrund der Spaltenüberschriftenzeile 
+ 												  * (hinter den einzelnen Überschriften)
+ 												  */
+	-fx-background-color: #FFC970
+}
+.table-view .table-row-cell:even{ /* Hintergrundfarbe gerader Zeilen in TableView */
+    -fx-background-color: #7CB3FF
+}
+.table-view .table-row-cell:selected{ /* Hintergrundfarbe ausgewählter Zeilen in TableView */
+	-fx-background-color: #002E6E
+}
+
+.table-view { /* Verhindert, dass die Schriftfarbe der ausgewählten Zeile sich ändert,
+ 			   * wenn Tabelle Focus verliert
+ 			   */
+    -fx-selection-bar-non-focused: -fx-selection-bar ;
+}
+
+.flow-pane{ /* Standard Hgap und Ausrichtung für FlowPane
+ 			 * (hauptsächlich für Überschriften genutzt)
+ 			 */
+	-fx-hgap: 8;
+	-fx-alignment: center 
+}
+.hbox{ /* Standard Zwischenabstände und Ausrichtung für HBox (Button-Leisten) */
+	-fx-alignment: center-right;
+	-fx-spacing: 16
+}
+

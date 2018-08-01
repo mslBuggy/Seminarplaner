@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="413.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teilnehmer.TeilnehmerController">
+   <children>
+      <TableView fx:id="tbTeilnehmer" layoutX="40.0" layoutY="35.0" prefHeight="264.0">
+        <columns>
+          <TableColumn fx:id="tcTeilnehmerNr" prefWidth="94.0" text="TeilnehmerNr" />
+          <TableColumn fx:id="tcVorname" prefWidth="77.0" text="Vorname" />
+            <TableColumn fx:id="tcNachname" prefWidth="75.0" text="Nachname" />
+            <TableColumn fx:id="tcTelFestnetz" prefWidth="75.0" text="TelFestnetz" />
+            <TableColumn fx:id="tcTelMobil" prefWidth="75.0" text="TelMobil" />
+            <TableColumn fx:id="tcAusbildung" prefWidth="75.0" text="Ausbildung" />
+            <TableColumn fx:id="tcAktiv" prefWidth="50.0" text="Aktiv" />
+        </columns>
+      </TableView>
+      <Button fx:id="btDetails" layoutX="93.0" layoutY="335.0" mnemonicParsing="false" onAction="#btDeatils_Click" text="Details" />
+      <Button fx:id="btNeu" layoutX="239.0" layoutY="335.0" mnemonicParsing="false" onAction="#btNeu_click" text="Neu" />
+      <Button fx:id="btDrucken" layoutX="503.0" layoutY="335.0" mnemonicParsing="false" onAction="#btDrucken_Click" text="Drucken" />
+   </children>
+</AnchorPane>

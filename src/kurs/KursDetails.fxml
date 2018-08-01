@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kurs.KursDetailsController">
+   <top>
+      <Pane prefHeight="85.0" prefWidth="200.0" styleClass="hintergrundTop" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="153.0" layoutY="32.0" styleClass="schriftLabel" text="Kursdetails">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <GridPane styleClass="hintergrund" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="sonstigesLabel" text="Kursnr." />
+            <Label fx:id="lbKursBezeichnung" styleClass="sonstigesLabel" text="Kursbezeichnung" GridPane.rowIndex="1" />
+            <Label fx:id="lbKursDauerTage" styleClass="sonstigesLabel" text="Dauer Tage" GridPane.rowIndex="2" />
+            <Label styleClass="sonstigesLabel" text="Braucht EDV" GridPane.rowIndex="3" />
+            <Label fx:id="lbLehrjahr" styleClass="sonstigesLabel" text="Lehrjahr" GridPane.rowIndex="5" />
+            <Label styleClass="sonstigesLabel" text="Bemerkung" GridPane.rowIndex="6" />
+            <TextField fx:id="txtKursNr" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="txtKursBezeichnung" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtKursDauerTage" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtLehrjahr" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextArea fx:id="taBemerkung" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <CheckBox fx:id="cbBrauchtEDV" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="lbAusbildung" styleClass="sonstigesLabel" text="Ausbildung" GridPane.rowIndex="4" />
+            <ListView fx:id="lvAusbildungen" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" styleClass="hintergrundBottom" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btLoeschen" mnemonicParsing="false" onAction="#btLoeschen_Click" style="-fx-border-color: red; -fx-text-fill: red;" text="Löschen" />
+            <Button fx:id="btSpeichern" mnemonicParsing="false" onAction="#btSpeichern_Click" text="Speichern" />
+            <Button fx:id="btAbbrechen" mnemonicParsing="false" onAction="#btAbbrechen_Click" text="Abbrechen" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

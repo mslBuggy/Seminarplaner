@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ausbildung.AusbildungDetailsController">
+   <children>
+      <DatePicker fx:id="dpAnfang" layoutX="107.0" layoutY="159.0" />
+      <DatePicker fx:id="dpEnde" layoutX="107.0" layoutY="189.0" />
+      <TextField fx:id="textBezeichnung" layoutX="107.0" layoutY="95.0" />
+      <TextField fx:id="textAusbildungNr" layoutX="107.0" layoutY="55.0" prefHeight="25.0" prefWidth="38.0" />
+      <Button fx:id="sucheSemleiter" layoutX="266.0" layoutY="236.0" mnemonicParsing="false" onAction="#btSuche_Seminarleiter_Click" text="Suche..." />
+      <TextField fx:id="textSeminarleiterNr" layoutX="107.0" layoutY="236.0" />
+      <ComboBox fx:id="cbAbschlussart" layoutX="106.0" layoutY="127.0" prefWidth="150.0" />
+      <HBox alignment="BOTTOM_RIGHT" layoutY="348.0" prefHeight="52.0" prefWidth="340.0">
+         <children>
+            <Button mnemonicParsing="false" text="Speichern...">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutY="54.0" prefHeight="230.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="labEnde" alignment="TOP_RIGHT" text="Ende" />
+            <Label fx:id="labAnfang" alignment="TOP_RIGHT" text="Anfang" />
+            <Label fx:id="labAusbildungNr" alignment="TOP_RIGHT" text="Nr" />
+            <Label alignment="TOP_RIGHT" text="Abschlussart" />
+            <Label fx:id="labBezeichnung" alignment="TOP_RIGHT" text="Bezeichnung" />
+            <Label fx:id="labSeminarleiterNr" alignment="TOP_RIGHT" text="SeminarleiterNr" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

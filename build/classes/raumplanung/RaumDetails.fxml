@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="326.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="raumplanung.RaumDetailsController">
+   <children>
+      <Label fx:id="labKapazitaet" layoutX="63.0" layoutY="54.0" text="Kapazität" />
+      <Label fx:id="labBemerkung" layoutX="51.0" layoutY="118.0" text="Bemerkung" />
+      <Label fx:id="labhatEDV" layoutX="68.0" layoutY="88.0" text="Hat EDV" />
+      <Button fx:id="speichern" layoutX="118.0" layoutY="287.0" mnemonicParsing="false" onAction="#speichern_Click" text="Speichern" />
+      <Button fx:id="ende" layoutX="205.0" layoutY="287.0" mnemonicParsing="false" onAction="#ende_Click" text="Abbruch" />
+      <TextField fx:id="textKapazitaet" layoutX="118.0" layoutY="50.0" prefHeight="25.0" prefWidth="49.0" />
+      <TextField fx:id="textBemerkung" layoutX="118.0" layoutY="114.0" prefHeight="25.0" prefWidth="49.0" />
+      <CheckBox fx:id="cbhatEDV" layoutX="118.0" layoutY="88.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="49.0" />
+      <Label fx:id="labRaumNr" layoutX="68.0" layoutY="19.0" text="RaumNr" />
+      <TextField fx:id="textRaumNr" layoutX="118.0" layoutY="15.0" prefHeight="25.0" prefWidth="44.0" />
+   </children>
+</AnchorPane>

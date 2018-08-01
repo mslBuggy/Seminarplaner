@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="480.0" prefWidth="800.0" styleClass="hintergrund" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeitplanung.ZeitplanTabelleController">
+	<top>
+		<Pane prefHeight="65.0" styleClass="hintergrundTop">
+			<children>
+				<Label layoutX="351.0" layoutY="14.0" styleClass="schriftLabel" text="Termine" textFill="WHITE">
+					<font>
+						<Font name="Gill Sans MT Bold" size="24.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+	</top>
+	<center>
+		<Pane prefHeight="350.0" prefWidth="800.0">
+			<children>
+				<TableView fx:id="tbZeitplanung" layoutX="14.0" prefHeight="350.0" prefWidth="772.0">
+					<columns>
+						<TableColumn fx:id="tcTerminNr" prefWidth="75.0" text="TerminNr" />
+						<TableColumn fx:id="tcKursNr" prefWidth="51.0" text="KursNr" />
+						<TableColumn fx:id="tcRaumNr" prefWidth="63.0" text="RaumNr" />
+						<TableColumn fx:id="tcAnfangsDatum" prefWidth="95.0" text="AnfangsDatum" />
+						<TableColumn fx:id="tcEndDatum" prefWidth="81.0" text="EndDatum" />
+						<TableColumn fx:id="tcTermintyp" prefWidth="97.0" text="Termintyp" />
+						<TableColumn fx:id="tcReferentNr" prefWidth="74.0" text="ReferentNr" />
+						<TableColumn fx:id="tcBemerkung" prefWidth="73.0" text="Bemerkung" />
+						<TableColumn fx:id="tcAendDatum" prefWidth="72.0" text="AendDatum" />
+						<TableColumn fx:id="tcAendBenutzer" prefWidth="90.0" text="AendBenutzer" />
+					</columns>
+				</TableView>
+			</children>
+		</Pane>
+	</center>
+   <bottom>
+      <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="65.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+				<Button fx:id="btDetails" mnemonicParsing="false" onAction="#btDetails_Click" text="Details..." />
+				<Button fx:id="btEnde" mnemonicParsing="false" style="-fx-border-color: red;" text="Ende" textFill="#ff6600">
+					<font>
+						<Font name="System Bold" size="12.0" />
+					</font>
+				</Button>
+         </children>
+         <styleClass>
+            <String fx:value="hbox" />
+            <String fx:value="hintergrund" />
+         </styleClass>
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

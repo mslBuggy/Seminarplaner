@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="raumplanung.RaumController">
+   <bottom>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="191.0" prefWidth="528.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Details" mnemonicParsing="false" onAction="#Details_Click" text="Details ..." />
+            <Button fx:id="neu" mnemonicParsing="false" onAction="#Neu_Click" text="Neu ..." />
+            <Button fx:id="ende" mnemonicParsing="false" onAction="#ende_Click" text="Ende ..." />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="315.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabRaum" layoutY="101.0" prefWidth="600.0" AnchorPane.bottomAnchor="-114.0" AnchorPane.topAnchor="5.0">
+              <columns>
+                <TableColumn fx:id="tabcRaumNr" prefWidth="105.0" text="Raum-Nr." />
+                <TableColumn fx:id="tabcKapazitaet" prefWidth="176.0" text="Kapazität" />
+                  <TableColumn fx:id="tabchatEDV" prefWidth="110.0" text="Hat EDV" />
+                  <TableColumn fx:id="tabcBemerkung" prefWidth="208.0" text="Bemerkung" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Pane prefHeight="56.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="270.0" layoutY="11.0" text="Raum">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

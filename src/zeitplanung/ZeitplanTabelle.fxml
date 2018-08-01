@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="480.0" prefWidth="800.0" styleClass="hintergrund" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeitplanung.ZeitplanTabelleController">
+	<top>
+		<Pane prefHeight="65.0" styleClass="hintergrundTop">
+			<children>
+				<Label layoutX="331.0" layoutY="18.0" styleClass="schriftLabel" text="Kurstermine" textFill="WHITE">
+					<font>
+						<Font name="Gill Sans MT Bold" size="24.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+	</top>
+	<center>
+		<Pane prefHeight="350.0" prefWidth="800.0">
+			<children>
+				<TableView fx:id="tbZeitplanung" layoutX="14.0" layoutY="55.0" prefHeight="295.0" prefWidth="772.0">
+					<columns>
+						<TableColumn fx:id="tcKursBezeichnung" prefWidth="138.0" text="KursBezeichnung" />
+						<TableColumn fx:id="tcRaumNr" prefWidth="53.0" text="RaumNr" />
+						<TableColumn fx:id="tcAnfangsDatum" prefWidth="97.0" text="AnfangsDatum" />
+						<TableColumn fx:id="tcEndDatum" prefWidth="76.0" text="EndDatum" />
+						<TableColumn fx:id="tcTermintyp" prefWidth="72.0" text="Termintyp" />
+						<TableColumn fx:id="tcReferent" prefWidth="108.0" text="Referent" />
+						<TableColumn fx:id="tcBemerkung" prefWidth="227.0" text="Bemerkung" />
+					</columns>
+				</TableView>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="800.0" spacing="12.0">
+               <children>
+                  <ComboBox fx:id="cbAusbildungsgang" prefWidth="255.0" promptText="Ausbildungsgang" />
+                  <ComboBox fx:id="cbLehrjahr" prefWidth="96.0" promptText="Lehrjahr" />
+                  <Button fx:id="btAnzeigen" mnemonicParsing="false" onAction="#btAnzeigen_Click" text="Kurse anzeigen" />
+               </children>
+            </HBox>
+			</children>
+		</Pane>
+	</center>
+   <bottom>
+      <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="65.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+         	<Button fx:id="btDrucken" mnemonicParsing="false" onAction="#btDrucken_Click" text="Drucken" />
+            <Button fx:id="btNeu" mnemonicParsing="false" onAction="#btNeu_Click" text="Neu..." />
+			<Button fx:id="btDetails" mnemonicParsing="false" onAction="#btDetails_Click" text="Details..." />
+			<Button fx:id="btEnde" mnemonicParsing="false" style="-fx-border-color: red;" text="Ende" textFill="#ff6600">
+				<font>
+					<Font name="System Bold" size="12.0" />
+				</font>
+			</Button>
+         </children>
+         <styleClass>
+            <String fx:value="hbox" />
+            <String fx:value="hintergrund" />
+         </styleClass>
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

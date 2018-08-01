@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seminarleiter.SeminarleiterDetailsController">
+   <children>
+      <Pane fx:id="pane" layoutX="26.0" layoutY="48.0" prefHeight="282.0" prefWidth="242.0">
+         <children>
+            <Label fx:id="labVorname" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="32.0" layoutY="36.0" text="Vorname" />
+            <Label fx:id="labNachname" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="20.0" layoutY="76.0" prefHeight="17.0" prefWidth="61.0" text="Nachname" />
+            <Label fx:id="labEmail" layoutX="47.0" layoutY="150.0" text="E-Mail" />
+            <Label fx:id="labTelNr" layoutX="47.0" layoutY="182.0" text="Tel-Nr" />
+            <Label fx:id="labBemerkung" layoutX="26.0" layoutY="220.0" text="Bemerkung" />
+            <Label fx:id="labGeschlecht" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="20.0" layoutY="112.0" prefHeight="17.0" prefWidth="61.0" text="Geschlecht" />
+            <TextField fx:id="textVorname" layoutX="88.0" layoutY="32.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="textNachname" layoutX="88.0" layoutY="72.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="textEmail" layoutX="88.0" layoutY="146.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="textTelnr" layoutX="88.0" layoutY="178.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="textBemerkung" layoutX="88.0" layoutY="216.0" prefHeight="25.0" prefWidth="135.0" />
+            <Label fx:id="labSeminarleiterNr" layoutY="6.0" text="SeminarleiterNr" />
+            <TextField fx:id="textSeminarleiterNr" layoutX="87.0" prefHeight="25.0" prefWidth="47.0" />
+            <ComboBox fx:id="cbGeschlecht" layoutX="88.0" layoutY="108.0" prefHeight="25.0" prefWidth="135.0" />
+         </children>
+      </Pane>
+      <HBox alignment="BOTTOM_RIGHT" layoutY="345.0" prefHeight="36.0" prefWidth="293.0">
+         <children>
+            <Button fx:id="speichern" alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#btSpeichern_Click" prefHeight="25.0" prefWidth="73.0" text="Speichern ...">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="ende" mnemonicParsing="false" onAction="#ende_Click" prefHeight="25.0" prefWidth="91.0" text="Abbruch...">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</Pane>

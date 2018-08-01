@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="347.0" prefWidth="259.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="referent.ReferentDetailsController">
+   <children>
+      <Label fx:id="labVorname" layoutX="43.0" layoutY="32.0" text="Vorname" />
+      <Label fx:id="labNachname" layoutX="39.0" layoutY="68.0" text="Nachname" />
+      <TextField fx:id="textVorname" layoutX="97.0" layoutY="28.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="textNachname" layoutX="97.0" layoutY="64.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="textEmail" layoutX="97.0" layoutY="100.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label fx:id="labEmail" layoutX="58.0" layoutY="104.0" text="E-Mail" />
+      <Label fx:id="labMobil" layoutX="60.0" layoutY="140.0" text="Mobil" />
+      <TextField fx:id="textMobil" layoutX="96.0" layoutY="136.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="textFestnetz" layoutX="96.0" layoutY="172.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label fx:id="labFestnetz" layoutX="46.0" layoutY="176.0" text="Festnetz" />
+      <Button fx:id="speichern" layoutX="97.0" layoutY="303.0" mnemonicParsing="false" onAction="#speichern_Click" text="Speichern" />
+      <Button fx:id="ende" layoutX="191.0" layoutY="303.0" mnemonicParsing="false" onAction="#ende_Click" text="Ende" />
+      <CheckBox fx:id="cbAktiv" layoutX="97.0" layoutY="240.0" mnemonicParsing="false" />
+      <Label fx:id="labAktiv" layoutX="62.0" layoutY="240.0" text="Aktiv" />
+      <Label fx:id="labBemerkung" layoutX="32.0" layoutY="210.0" text="Bemerkung" />
+      <TextField fx:id="textBemerkung" layoutX="96.0" layoutY="206.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="textReferentNr" layoutX="97.0" layoutY="264.0" prefHeight="25.0" prefWidth="21.0" />
+      <Label fx:id="labReferentNr" layoutX="65.0" layoutY="268.0" text="R.nr" />
+   </children>
+</AnchorPane>
